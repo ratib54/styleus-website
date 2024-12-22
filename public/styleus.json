@@ -1,0 +1,107 @@
+[
+ {
+  "id": "1",
+  "product_name": "Chic Black Cocktail Dress",
+  "details": "A sleek black cocktail dress with a fitted silhouette, off-shoulder design, and knee-length hem. Perfect for formal parties and evening events.",
+  "price": "$59.99",
+  "image_url": "https://example.com/images/black-cocktail-dress.jpg"
+ },
+ {
+  "id": "2",
+  "product_name": "Summer Boho Maxi Dress",
+  "details": "A breezy boho-inspired maxi dress featuring a vibrant paisley print, adjustable straps, and a smocked back. Ideal for beach outings and festivals.",
+  "price": "$49.99",
+  "image_url": "https://example.com/images/boho-maxi-dress.jpg"
+ },
+ {
+  "id": "3",
+  "product_name": "Classic White Shirt Dress",
+  "details": "A timeless white shirt dress with a collared neckline, button-front closure, and a tie waist. Suitable for casual and workwear.",
+  "price": "$39.99",
+  "image_url": "https://example.com/images/white-shirt-dress.jpg"
+ },
+ {
+  "id": "4",
+  "product_name": "Velvet Evening Gown",
+  "details": "A luxurious velvet evening gown with a plunging neckline, long sleeves, and a floor-length design. Perfect for black-tie events.",
+  "price": "$89.99",
+  "image_url": "https://example.com/images/velvet-evening-gown.jpg"
+ },
+ {
+  "id": "5",
+  "product_name": "Casual Denim Dress",
+  "details": "A comfortable denim dress featuring short sleeves, button detailing, and a relaxed fit. Great for everyday wear.",
+  "price": "$34.99",
+  "image_url": "https://example.com/images/denim-dress.jpg"
+ },
+ {
+  "id": "6",
+  "product_name": "Ruffled Wrap Dress",
+  "details": "A feminine wrap dress with ruffle accents, a deep V-neckline, and an asymmetrical hem. Perfect for date nights and special occasions.",
+  "price": "$54.99",
+  "image_url": "https://example.com/images/ruffled-wrap-dress.jpg"
+ },
+ {
+  "id": "7",
+  "product_name": "Vintage Polka Dot Dress",
+  "details": "A retro-inspired polka dot dress with a sweetheart neckline, cap sleeves, and a flared skirt. Perfect for adding vintage charm to your wardrobe.",
+  "price": "$42.99",
+  "image_url": "https://example.com/images/polka-dot-dress.jpg"
+ },
+ {
+  "id": "8",
+  "product_name": "Elegant Lace Midi Dress",
+  "details": "A graceful lace midi dress with a high neckline, sheer sleeves, and a scalloped hem. Suitable for weddings and formal dinners.",
+  "price": "$64.99",
+  "image_url": "https://example.com/images/lace-midi-dress.jpg"
+ },
+ {
+  "id": "9",
+  "product_name": "Bold Red Bodycon Dress",
+  "details": "A bold and sexy bodycon dress in vibrant red, featuring a sweetheart neckline and a knee-length fit. Ideal for night-outs and parties.",
+  "price": "$44.99",
+  "image_url": "https://example.com/images/red-bodycon-dress.jpg"
+ },
+ {
+  "id": "10",
+  "product_name": "Comfy Knit Sweater Dress",
+  "details": "A cozy knit sweater dress with a turtleneck, long sleeves, and a relaxed fit. Perfect for chilly days.",
+  "price": "$39.99",
+  "image_url": "https://example.com/images/knit-sweater-dress.jpg"
+ },
+ {
+  "id": "11",
+  "product_name": "Floral A-Line Sundress",
+  "details": "A charming A-line sundress featuring a bright floral print, spaghetti straps, and a flattering fit-and-flare silhouette. Great for summer picnics.",
+  "price": "$29.99",
+  "image_url": "https://example.com/images/floral-sundress.jpg"
+ },
+ {
+  "id": "12",
+  "product_name": "Modern Pleated Midi Dress",
+  "details": "A stylish pleated midi dress with a sleeveless design, belted waist, and flowing skirt. Suitable for office wear and casual events.",
+  "price": "$49.99",
+  "image_url": "https://example.com/images/pleated-midi-dress.jpg"
+ },
+ {
+  "id": "13",
+  "product_name": "Shimmering Sequin Dress",
+  "details": "A dazzling sequin dress with a scoop neckline, long sleeves, and a mini hemline. Perfect for New Year’s Eve and festive celebrations.",
+  "price": "$79.99",
+  "image_url": "https://example.com/images/sequin-dress.jpg"
+ },
+ {
+  "id": "14",
+  "product_name": "Tiered Smocked Dress",
+  "details": "A playful smocked dress with tiered layers, puff sleeves, and a square neckline. Great for casual brunches and outings.",
+  "price": "$36.99",
+  "image_url": "https://example.com/images/tiered-smocked-dress.jpg"
+ },
+ {
+  "id": "15",
+  "product_name": "Elegant Satin Slip Dress",
+  "details": "A minimalist satin slip dress with a cowl neckline, adjustable straps, and a midi-length hem. Ideal for evening occasions.",
+  "price": "$69.99",
+  "image_url": "https://example.com/images/satin-slip-dress.jpg"
+ }
+]
