@@ -5,7 +5,7 @@ import Blogs from './Blogs';
 
 const Blog = () => {
  const [blogs, setBlogs] = useState([]);
- const [cart, setCart] = useState([]);
+ const [cart, setCart] = useState([{}]);
 
 
 
@@ -18,8 +18,8 @@ const Blog = () => {
 
  // Handle adding item to the cart
 
- const handleCart = (p) => {
-  setCart([p]);
+ const handleCart = (product) => {
+  setCart(prevCart => [...prevCart, product])
  };
 
  console.log(cart);
