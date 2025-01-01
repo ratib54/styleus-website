@@ -10,7 +10,7 @@ const MainLay = () => {
  useEffect(() => {
   const fetchData = async () => {
    try {
-    const response = await new Promise(resolve => setTimeout(() => resolve({ data: 'some data' }), 3000));
+    const response = await new Promise(resolve => setTimeout(() => resolve({ data: 'some data' }), 4000));
     setData(response.data);
     setLoader(false);
    } catch (error) {
@@ -34,7 +34,7 @@ const MainLay = () => {
 
  return (
   <div className="bg-[#000] h-[100%]">
-   <div className="sticky top-0">
+   <div className="sticky top-0 bg-[#000] z-10">
     <Navbar />
    </div>
    <Outlet />

@@ -15,73 +15,73 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 // import gsap from 'gsap';
 
-const Explore = () => { 
+const Explore = () => {
 
 
-useGSAP(()=>{
-  gsap.from('.text-container-1 h1',{
-    x:100 ,
-    stagger:0.3 ,
-    duration : 1 ,
-    delay : 0.5 ,
-    scrollTrigger : {
-      trigger :'.text-container-1 h1' ,
-      markers : true 
-    }
+  useGSAP(() => {
+    gsap.from('.text-container-1 h1', {
+      x: 100,
+      stagger: 0.3,
+      duration: 1,
+      delay: 0.5,
+      scrollTrigger: {
+        trigger: '.text-container-1 h1',
+        markers: true
+      }
 
+    })
   })
-})
 
 
- return (
-  <div className='max-w-[1500px] mx-auto mt-10 h-full p-10  '>
+  return (
+    <div id='Explore' className='max-w-[1500px] mx-auto mt-10 h-full p-10  '>
 
-   <div className='text-center mt-24 mb-16 text-container-1'>
-    <h1 className='text-white poppins font-semibold text-[3vw] underline'>Explore The trend</h1>
-    <h1 className='text-white poppins font-semibold text-[3vw] underline'>&& Choose the Unique</h1>
-   </div>
-
-
+      <div className='text-center mt-24 mb-16 text-container-1'>
+        <h1 className='text-white poppins font-semibold text-[3vw] underline'>Explore The trend</h1>
+        <h1 className='text-white poppins font-semibold text-[3vw] underline'>&& Choose the Unique</h1>
+      </div>
 
 
 
 
-        <Swiper
+
+
+      <Swiper
         slidesPerView={4}
-        spaceBetween={30} 
+        spaceBetween={30}
         centeredSlides={true}
-         autoplay={{
+        autoplay={{
           delay: 1000,
           disableOnInteraction: false,
         }}
         loop={true}
-       
-        modules={[Autoplay,Pagination, Navigation]}
+
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper h-[600px] flex justify-center items-center  bg-black"
       >
-      
+
         <SwiperSlide className=' max-h-full max-w-96 mx-auto  '>
-         <img src={img1} alt="" />
+          <img src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide className='max-h-full max-w-96 mt-7 mx-auto'>
-         <img src={img2} alt="" />
+          <img src={img2} alt="" />
         </SwiperSlide>
         <SwiperSlide className='max-h-full max-w-96 mx-auto  '>
-         <img src={img3} alt="" />
+          <img src={img3} alt="" />
         </SwiperSlide>
         <SwiperSlide className='max-h-full max-w-96 mx-auto mt-12  '>
-         <img src={img4} alt="" />
+          <img src={img4} alt="" />
         </SwiperSlide>
         <SwiperSlide className='max-h-full max-w-96 mx-auto  '>
-         <img src={img5} alt="" />
+          <img src={img5} alt="" />
         </SwiperSlide>
         <SwiperSlide className='max-h-full max-w-96 mx-auto mt-7 '>
-         <img src={img6} alt="" />
+          <img src={img6} alt="" />
         </SwiperSlide>
-      
+
       </Swiper>
-  </div>
- );
+    </div>
+  );
 };
 
 export default Explore;

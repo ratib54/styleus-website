@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import toast, { Toaster } from 'react-hot-toast';
 
 const Blogs = ({ blog, handleCart }) => {
  const { id, product_name, details, price, image_url } = blog;
-
 
  return (
   <div>
@@ -22,7 +20,6 @@ const Blogs = ({ blog, handleCart }) => {
      </div>
     </div>
    </div>
-
   </div>
  );
 };

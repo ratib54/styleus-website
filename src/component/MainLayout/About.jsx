@@ -21,7 +21,7 @@ const About = () => {
   });
 
   return (
-    <div className='About  mt-24 p-10 max-w-[1600px] mx-auto rounded-3xl '>
+    <div className='About  mt-24 p-10 max-w-[1600px] mx-auto rounded-3xl ' id='About'>
 
 
 

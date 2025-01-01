@@ -36,6 +36,8 @@ const Navbar = () => {
 
           <NavLink to={'/'} className='font-light text-[18px]  '>Home</NavLink>
           <NavLink to={'/more'} className='font-light text-[18px] '>Choose</NavLink>
+          <a className='font-light text-[18px]' href="#About">About</a>
+          <a className='font-light text-[18px]' href="#Explore">Explore</a>
         </div>
         <NavLink to={'/cart'} className="navbar-end">
           <a className="btn  text-[#fff] bg-black "><ShoppingCartIcon /></a>
