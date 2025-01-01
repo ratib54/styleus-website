@@ -11,6 +11,11 @@ import Cart from "./component/MainLayout/Cart";
 import Details from "./component/MainLayout/Details";
 import { CartProvider } from "./context/CartContext";
 
+
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
