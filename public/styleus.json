@@ -3,105 +3,105 @@
   "id": "1",
   "product_name": "Chic Black Cocktail Dress",
   "details": "A sleek black cocktail dress with a fitted silhouette, off-shoulder design, and knee-length hem. Perfect for formal parties and evening events.",
-  "price": "$59.99",
-  "image_url": "https://ibb.co.com/4FF2Qgy.jpg"
+  "price": 59.99,
+  "image_url": "https://i.ibb.co.com/qY8dqqf/lovely-blonde-woman-portrait-with-dress-with-transparencies-144627-18811.jpg"
  },
  {
   "id": "2",
   "product_name": "Summer Boho Maxi Dress",
   "details": "A breezy boho-inspired maxi dress featuring a vibrant paisley print, adjustable straps, and a smocked back. Ideal for beach outings and festivals.",
-  "price": "$49.99",
-  "image_url": "https://example.com/images/boho-maxi-dress.jpg"
+  "price": 49.99,
+  "image_url": "https://i.ibb.co.com/Lnsb2r9/stylish-woman-red-hat-blue-wall-printed-outfit-summer-style-fashion-trend-top-skirt-skinny-straw-han.jpg"
  },
  {
   "id": "3",
   "product_name": "Classic White Shirt Dress",
   "details": "A timeless white shirt dress with a collared neckline, button-front closure, and a tie waist. Suitable for casual and workwear.",
-  "price": "$39.99",
-  "image_url": "https://example.com/images/white-shirt-dress.jpg"
+  "price": 39.99,
+  "image_url": "https://i.ibb.co.com/BcQ63nr/handsome-hipster-model-man-stylish-summer-clothes-posing-sunglasses-158538-14672.jpg"
  },
  {
   "id": "4",
   "product_name": "Velvet Evening Gown",
   "details": "A luxurious velvet evening gown with a plunging neckline, long sleeves, and a floor-length design. Perfect for black-tie events.",
-  "price": "$89.99",
-  "image_url": "https://example.com/images/velvet-evening-gown.jpg"
+  "price": 89.99,
+  "image_url": "https://i.ibb.co.com/db2KRNY/beautiful-sexy-brunette-is-standing-near-pool-long-blue-separated-dress-woman-with-long-hair-perfect.jpg"
  },
  {
   "id": "5",
   "product_name": "Casual Denim Dress",
   "details": "A comfortable denim dress featuring short sleeves, button detailing, and a relaxed fit. Great for everyday wear.",
-  "price": "$34.99",
-  "image_url": "https://example.com/images/denim-dress.jpg"
+  "price": 34.99,
+  "image_url": "https://i.ibb.co.com/7YvJkGM/stylish-beautiful-woman-denim-shirt-set-standing-near-wall-street-style-fashion-total-denim-624677-2.jpg"
  },
  {
   "id": "6",
   "product_name": "Ruffled Wrap Dress",
   "details": "A feminine wrap dress with ruffle accents, a deep V-neckline, and an asymmetrical hem. Perfect for date nights and special occasions.",
-  "price": "$54.99",
-  "image_url": "https://example.com/images/ruffled-wrap-dress.jpg"
+  "price": 54.99,
+  "image_url": "https://i.ibb.co.com/yXrDm7F/beautiful-woman-with-blue-eyes-144627-31431.jpg"
  },
  {
   "id": "7",
   "product_name": "Vintage Polka Dot Dress",
   "details": "A retro-inspired polka dot dress with a sweetheart neckline, cap sleeves, and a flared skirt. Perfect for adding vintage charm to your wardrobe.",
-  "price": "$42.99",
-  "image_url": "https://example.com/images/polka-dot-dress.jpg"
+  "price": 42.99,
+  "image_url": "https://i.ibb.co.com/hLbRNWW/elegant-woman-wearing-red-polka-dot-dress-white-gloves-posing-vintage-interior-1429-32565.jpg"
  },
  {
   "id": "8",
   "product_name": "Elegant Lace Midi Dress",
   "details": "A graceful lace midi dress with a high neckline, sheer sleeves, and a scalloped hem. Suitable for weddings and formal dinners.",
-  "price": "$64.99",
-  "image_url": "https://example.com/images/lace-midi-dress.jpg"
+  "price": 64.99,
+  "image_url": "https://i.ibb.co.com/L916BWV/portrait-young-attractive-woman-elegant-dress-straw-hat-summer-style-fashion-trend-vacation-smiling.jpg"
  },
  {
   "id": "9",
   "product_name": "Bold Red Bodycon Dress",
   "details": "A bold and sexy bodycon dress in vibrant red, featuring a sweetheart neckline and a knee-length fit. Ideal for night-outs and parties.",
-  "price": "$44.99",
-  "image_url": "https://example.com/images/red-bodycon-dress.jpg"
+  "price": 44.99,
+  "image_url": "https://i.ibb.co.com/4PP65wW/woman-red-dress-144627-36137.jpg"
  },
  {
   "id": "10",
   "product_name": "Comfy Knit Sweater Dress",
   "details": "A cozy knit sweater dress with a turtleneck, long sleeves, and a relaxed fit. Perfect for chilly days.",
-  "price": "$39.99",
-  "image_url": "https://example.com/images/knit-sweater-dress.jpg"
+  "price": 39.99,
+  "image_url": "https://i.ibb.co.com/VNn0nMM/portrait-woman-wearing-knitted-cap-23-2148923343.jpg"
  },
  {
   "id": "11",
   "product_name": "Floral A-Line Sundress",
   "details": "A charming A-line sundress featuring a bright floral print, spaghetti straps, and a flattering fit-and-flare silhouette. Great for summer picnics.",
-  "price": "$29.99",
-  "image_url": "https://example.com/images/floral-sundress.jpg"
+  "price": 29.99,
+  "image_url": "https://i.ibb.co.com/j8Wnv2b/woman-wearing-sundress-23-2150388747.jpg"
  },
  {
   "id": "12",
   "product_name": "Modern Pleated Midi Dress",
   "details": "A stylish pleated midi dress with a sleeveless design, belted waist, and flowing skirt. Suitable for office wear and casual events.",
-  "price": "$49.99",
-  "image_url": "https://example.com/images/pleated-midi-dress.jpg"
+  "price": 49.99,
+  "image_url": "https://i.ibb.co.com/1f1T0W9/fashion-photo-young-magnificent-woman-green-dress-158595-327.jpg"
  },
  {
   "id": "13",
   "product_name": "Shimmering Sequin Dress",
   "details": "A dazzling sequin dress with a scoop neckline, long sleeves, and a mini hemline. Perfect for New Year’s Eve and festive celebrations.",
-  "price": "$79.99",
-  "image_url": "https://example.com/images/sequin-dress.jpg"
+  "price": 79.99,
+  "image_url": "https://i.ibb.co.com/JsL15Z7/woman-sequin-dress-144627-28196.jpg"
  },
  {
   "id": "14",
   "product_name": "Tiered Smocked Dress",
   "details": "A playful smocked dress with tiered layers, puff sleeves, and a square neckline. Great for casual brunches and outings.",
-  "price": "$36.99",
-  "image_url": "https://example.com/images/tiered-smocked-dress.jpg"
+  "price": 36.99,
+  "image_url": "https://i.ibb.co.com/3Rvq681/gorgeous-woman-dress-144627-44595.jpg"
  },
  {
   "id": "15",
   "product_name": "Elegant Satin Slip Dress",
   "details": "A minimalist satin slip dress with a cowl neckline, adjustable straps, and a midi-length hem. Ideal for evening occasions.",
-  "price": "$69.99",
-  "image_url": "https://example.com/images/satin-slip-dress.jpg"
+  "price": 69.99,
+  "image_url": "https://i.ibb.co.com/WK2d8cg/full-shot-smiley-woman-holding-flowers-bouquet-23-2149326471.jpg"
  }
 ]

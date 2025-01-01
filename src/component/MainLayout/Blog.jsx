@@ -28,7 +28,7 @@ const Blog = () => {
  };
 
  return (
-  <div className="bg-black h-[2500px]">
+  <div className="bg-black h-[3800px]">
    <Toaster ></Toaster>
    <section className="flex justify-between p-5 max-w-[1500px] mx-auto pt-16">
     <div className="content font-bold pak text-4xl uppercase text-white">
