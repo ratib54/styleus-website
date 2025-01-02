@@ -3,9 +3,7 @@ import { Link, useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
  const details = useLoaderData();
-
  const { id } = useParams();
-
  const idInt = parseInt(id, 10);
 
  if (!details) {
@@ -28,20 +26,31 @@ const Details = () => {
 
  return (
   <>
-   <div className='flex justify-centre gap-20 items-center p-32  '>
-    <div className='text-white space-y-5'>
-     <h1 className='text-[30px] pak' >{detail.product_name}</h1>
-     <p className='max-w-xl'>{detail.details}</p>
-     <p className='text-red-700 font-bold'>Price: ${detail.price}</p>
+   <div className='flex flex-col lg:flex-row justify-center gap-8 lg:gap-20 items-center p-6 lg:p-24'>
+    {/* Text Section */}
+    <div className='text-white space-y-5 max-w-lg'>
+     <h1 className='text-3xl sm:text-4xl md:text-5xl pak'>{detail.product_name}</h1>
+     <p className='max-w-xl text-sm sm:text-base lg:text-lg'>{detail.details}</p>
+     <p className='text-red-700 font-bold text-lg sm:text-xl'>Price: ${detail.price}</p>
     </div>
-    <div className='grid grid-cols-1 justify-center items-center'>
-     <img className='rounded-xl w-full max-w-xs sm:max-w-md md:max-w-lg' src={detail.image_url} alt={detail.product_name} />
-     <Link to={'/more'}>
-      <button className="bg-white text-black px-10 py-3 btn border-black rounded ml-[5%] w-96  mt-10 pak font-bold text-[15px] text-center">
-       Choose
-      </button>
-     </Link>
+
+    {/* Image Section */}
+    <div className='flex justify-center items-center'>
+     <img
+      className='rounded-xl w-full max-w-xs sm:max-w-md md:max-w-lg'
+      src={detail.image_url}
+      alt={detail.product_name}
+     />
     </div>
+   </div>
+
+   {/* Choose Button */}
+   <div className='flex justify-center pb-10 '>
+    <Link to='/more'>
+     <button className="bg-white text-black px-8 py-3 btn border-black rounded-md w-full sm:w-auto mt-6 pak font-bold text-base sm:text-lg text-center">
+      Choose
+     </button>
+    </Link>
    </div>
   </>
  );

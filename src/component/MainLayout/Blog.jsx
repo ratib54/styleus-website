@@ -46,24 +46,24 @@ const Blog = () => {
 
 
  return (
-  <div id="allCard" className="bg-black h-[3500px]">
+  <div id="allCard" className="bg-black lg:h-[3500px] h-full">
    <Toaster ></Toaster>
-   <section className="flex justify-between p-5 max-w-[1500px] mx-auto pt-16">
+   <section className="lg:flex justify-between p-5 max-w-[1500px] mx-auto pt-16">
     <div className="content font-bold pak text-4xl uppercase text-white">
      let's Style.
     </div>
-    <section className="search w-64 p-3 bg-white text-white flex justify-center items-center gap-2 rounded-2xl">
+    <section className="search w-64 p-3 bg-white text-white flex justify-center items-center gap-2 rounded-2xl lg:mt-0 mt-5">
      <SearchIcon className="text-black" />
      <input
       type="text"
       placeholder="Search Here"
-      className="outline-none text-black"
+      className="outline-none text-black "
       onChange={(e) => setSearchTerm(e.target.value)}
      />
     </section>
    </section>
    <div className="h-[1px] bg-white max-w-[1500px] mx-auto mt-5"></div>
-   <div className="grid grid-cols-3 justify-between items-center gap-7 p-20">
+   <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-between items-center gap-7 lg:p-20 p-1">
     {blogs
 
      .filter((blog) => {

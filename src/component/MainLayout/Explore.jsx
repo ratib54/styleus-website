@@ -22,34 +22,79 @@ const images = [img1, img2, img3, img4, img5, img6]; // Dynamically manage the i
 
 const Explore = () => {
   useGSAP(() => {
-    const explore = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Explore",
-        start: "top 80%",
-        end: "bottom 80%",
-        scrub: 1,
-      },
-    });
+    gsap.matchMedia({
+      // For small screens (max-width: 640px)
+      "(max-width: 640px)": () => {
+        const explore = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".Explore",
+            start: "top 60%",
+            end: "bottom 40%",
+            scrub: 1,
+          },
+        });
 
-    explore.from('.explore-container', {
-      x: 100,
-      opacity: 0,
-      duration: 0.5,
-      delay: 0.2
+        explore.from('.explore-container', {
+          y: -100,
+          opacity: 0,
+          duration: 0.5,
+        });
+      },
+
+      // For medium screens (min-width: 641px and max-width: 1024px)
+      "(min-width: 641px) and (max-width: 1024px)": () => {
+        const explore = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".Explore",
+            start: "top 80%",
+            end: "bottom 50%",
+            scrub: 1,
+          },
+        });
+
+        explore.from('.explore-container', {
+          x: 100,
+          opacity: 0,
+          duration: 0.5,
+          delay: 0.2,
+        });
+      },
+
+      // For large screens (min-width: 1025px)
+      "(min-width: 1025px)": () => {
+        const explore = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".Explore",
+            start: "top 80%",
+            end: "bottom 80%",
+            scrub: 1,
+          },
+        });
+
+        explore.from('.explore-container', {
+          x: 150,
+          opacity: 0,
+          duration: 0.5,
+          delay: 0.2,
+        });
+      },
     });
   });
 
   return (
-    <div id='Explore' className='max-w-[1500px] mx-auto mt-10 h-full p-10'>
-
+    <div id='Explore' className='max-w-screen-7xl mx-auto mt-10 lg:h-full p-6 sm:p-10 lg:p-20'>
       <div className='text-center mt-24 mb-16 explore-container'>
-        <h1 className='text-white poppins font-semibold text-[3vw] underline e-1'>Explore The Trend</h1>
-        <h1 className='text-white poppins font-semibold text-[3vw] underline e-2'>&& Choose the Unique</h1>
+        <h1 className='text-white poppins font-semibold text-[5vw] sm:text-[4vw] lg:text-[3vw] underline e-1'>
+          Explore The Trend
+        </h1>
+        <h1 className='text-white poppins font-semibold text-[5vw] sm:text-[4vw] lg:text-[3vw] underline e-2'>
+          && Choose the Unique
+        </h1>
       </div>
 
       <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={20}
         centeredSlides={true}
         autoplay={{
           delay: 2000,
@@ -57,11 +102,25 @@ const Explore = () => {
         }}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[600px] flex justify-center items-center bg-black"
+        className="mySwiper lg:h-[600px] bg-black"
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index} className='max-h-full max-w-96 mx-auto'>
-            <img src={img} alt={`style image ${index + 1}`} />
+          <SwiperSlide key={index} className='max-h-full'>
+            <img src={img} alt={`style image ${index + 1}`} className="w-full h-auto object-cover rounded-xl" />
           </SwiperSlide>
         ))}
       </Swiper>

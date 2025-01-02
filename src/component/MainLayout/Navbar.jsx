@@ -26,8 +26,9 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow poppins ">
-              <li className='font-light text-[18px] '>Home</li>
-              <li className='font-light text-[18px] '>Choose</li>
+              <NavLink to={'/'} className='font-light text-black text-[18px] '>Home</NavLink>
+              <NavLink to={'/more'} className='font-light text-black text-[18px] '>choose</NavLink>
+
             </ul>
           </div>
           <a className="btn btn-ghost text-xl bokor uppercase ">StyleUs.</a>
