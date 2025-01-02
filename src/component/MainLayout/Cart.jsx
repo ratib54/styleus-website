@@ -6,6 +6,9 @@ import Lottie from "lottie-react";
 import { NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 import { ToastContainer } from "react-toastify";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { duration } from "@mui/material";
 
 const Cart = () => {
  const { addToCart, removeFromCart, cart } = useCart();
@@ -16,13 +19,26 @@ const Cart = () => {
 
  // Calculate total price
  const totalPrice = cart.reduce((total, item) => {
-  // Ensure item.price is treated as a number
   const price = parseFloat(item.price);
   return total + (isNaN(price) ? 0 : price);
- }, 0).toFixed(2); // Provide initial value of 0 for reduce
+ }, 0).toFixed(2);
+
+ // Use Gsap From Cart //
+
+ useGSAP(() => {
+
+  gsap.from('#cartCard > *', {
+   x: -100,
+   duration: 0.5,
+   delay: 0.2,
+   stagger: 0.1,  // Stagger each child element's animation by 0.1 seconds
+   opacity: 0,
+  });
+ }, []);
+
 
  return (
-  <div className="bg-black min-h-screen p-20 space-y-10">
+  <div className="bg-black min-h-screen p-20 space-y-10" >
    {cart.length === 0 ? (
     <div className="grid place-items-center space-y-2">
      <ToastContainer />
@@ -37,7 +53,7 @@ const Cart = () => {
    ) : (
     <>
      {cart.map((item) => (
-      <div key={item.id}>
+      <div key={item.id} id="cartCard">
        <div className="flex gap-3 justify-between items-center h-min border-b-2 px-20 py-3 bg-gray-800">
         <div className="w-40 h-40 border rounded-xl overflow-hidden">
          <img src={item.image_url} alt={item.product_name} className="w-full h-full object-cover" />
@@ -64,12 +80,14 @@ const Cart = () => {
       </div>
      ))}
 
-     <div className="flex justify-between items-center border-t-2 pt-5 mt-5 text-white font-bold text-xl">
-      <span>Total Price:</span>
-      <span>${totalPrice}</span>
-     </div>
+     <div className="sticky bottom-2 bg-[#000000a5] px-20">
+      <div className="flex justify-between items-center border-t-2 pt-5 mt-5 text-white font-bold text-xl ">
+       <span>Total Price:</span>
+       <span>${totalPrice}</span>
+      </div>
 
-     <button className="bg-white text-black px-10 py-3 btn border-black rounded w-96 ml-[35%] mt-16  pak font-bold text-[15px] text-center">PLace Your Order</button>
+      <button className="bg-white text-black px-10 py-3 btn border-black rounded w-96 ml-[35%] mt-16  pak font-bold text-[15px] text-center ">PLace Your Order</button>
+     </div>
 
     </>
    )}

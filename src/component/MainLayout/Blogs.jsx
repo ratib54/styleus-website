@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Blogs = ({ blog, handleCart }) => {
- const { id, product_name, details, price, image_url } = blog;
+ const { id, product_name, price, image_url } = blog;
 
  return (
   <div>
@@ -12,7 +12,7 @@ const Blogs = ({ blog, handleCart }) => {
     </figure>
     <div className="card-body items-center text-center pak font-medium uppercase">
      <h2 className="card-title">{product_name}</h2>
-     <p>{details}</p>
+
      <p className="text-xl font-bold">Price : $ <span className="text-[#3d1414]">{price}</span></p>
      <div className="card-actions">
       <button onClick={() => handleCart(blog)} className="btn bg-black text-white">ADD TO CART</button>

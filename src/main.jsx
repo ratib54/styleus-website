@@ -27,20 +27,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/more",
-        element: <More></More>,
+        element: <More />,
       },
       {
         path: "/cart",
-        element: <Cart></Cart>,
+        element: <Cart />,
       },
       {
-        path: "/detail/:id",
+        path: "/details/:id",  // Change path here to '/details/:id'
         element: <Details />,
         loader: () => fetch("./styleus.json"),
       },
     ],
   },
 ]);
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

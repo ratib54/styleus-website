@@ -40,7 +40,7 @@ const Navbar = () => {
           <a className='font-light text-[18px]' href="#Explore">Explore</a>
         </div>
         <NavLink to={'/cart'} className="navbar-end">
-          <a className="btn  text-[#fff] bg-black "><ShoppingCartIcon /></a>
+          <a className="btn  text-[#fff] bg-black ">CART<ShoppingCartIcon /></a>
         </NavLink>
       </div>
     </div>

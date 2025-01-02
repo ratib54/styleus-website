@@ -3,6 +3,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import Blogs from "./Blogs";
 import { useCart } from "../../context/CartContext";
 import toast, { Toaster } from 'react-hot-toast';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Blog = () => {
  const [blogs, setBlogs] = useState([]);
@@ -27,8 +29,24 @@ const Blog = () => {
   }
  };
 
+ // GSAP // 
+
+
+ useGSAP(() => {
+
+  gsap.from('#allCard > *', {
+   y: -100,
+   duration: 0.5,
+   delay: 0.2,
+   stagger: 0.1,
+   opacity: 0,
+  });
+ }, []);
+
+
+
  return (
-  <div className="bg-black h-[3800px]">
+  <div id="allCard" className="bg-black h-[3500px]">
    <Toaster ></Toaster>
    <section className="flex justify-between p-5 max-w-[1500px] mx-auto pt-16">
     <div className="content font-bold pak text-4xl uppercase text-white">
